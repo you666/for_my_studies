@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ja">
+ <head>
+ 			<meta charset="utf-8">
+    <title>HTML5 CSS3 jQuery</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-2.0.3.js"></script>
+    <script type="text/javascript" src="js/practice.js"></script>
+ </head>
+<body id="tab">
+<h1 class="clearfix">
+<ul ID="tags">
+<li>HTML5</li>
+<li>CSS3</li>
+<li>jQuery</li>
+</ul>
+</h1>
+
+<section id="html" class="cont">
+<h2 class="title">HTML5</h2>
+<a href="http://html5boilerplate.com/">HTML5★BOILERPLATE</a>
+
+<pre id="pre1">head tagの中に書く
+&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+という属性値はviewportで表示する幅を設定するという宣言をし、
+content="width=device-width, initial-scale=1"という部分で
+画面の表示幅は閲覧機種の最大幅、拡大率は1倍でという指定をしている。
+</pre>
+<p id="p1">HTML4.01までで存在していた「ブロック要素」「インライン要素」という概念は撤廃され、<br>
+HTML5から「コンテンツモデル」という概念に取って代わった。<br>
+要素を7つのグループにカテゴライズして振り分けられている。</p>
+</section>
+
+<section id="css" class="cont">
+<h2 class="title">CSS3</h2>
+<p>border-radius<br>
+nth-child(n)</p>
+<p>いろんなことが画像を使わずにできるようになりました！</p>
+</section>
+
+<section id="jquery" class="cont">
+<h2 class="title">jQuery</h2>
+
+<p id="p2">スライドショーなどの視覚的な動作だけでなく、HTML/CSSソースの自動書き換えなども行える。<br />
+というかこっちのほうがよく使うし便利。</p>
+
+<p id="p3">ちなみにAjaxとはブラウザ内で「非同期通信」を行うもので、Facebookの自動更新を行う機能などが例としてあげられる。<br />
+jQueryの親となるもの。（他の機能もあるけどね！）</p>
+
+<p><span>メソッドチェーンの概念から覚えよう</span></p>
+
+
+<h2 class="subtitle">jQuery構文</h2>
+<p>jQuery構文はHTML要素の選択と、要素のアクション実行で構成されています。</p>
+
+<pre>基本的な構文は
+	$(セレクタ).action()
+・$:jQueryを定義するもの
+・セレクタ:HTML要素の指定、検索を行う部分
+・.action:要素に対して実行されるjQuery action()
+
+$(document).ready(function)(){
+	//jQuery関数はここに書く
+));
+</pre>
+
+<p>document.readyの中に書くのはドキュメントのロードが完了する前にjQueryコードの実行を防ぐため。<br />
+つまり、確実にjQueryの動作を発動させるためである。</p>
+
+
+<h2 class="subtitle">jQueryセレクタ</h2>
+<p>セレクタは、グループ、または単一要素としてHTML要素の選択と処理を可能にします。</p>
+
+<h3 class="hoge">jQuery要素セレクタ</h3>
+<pre>
+jQueryはHTML要素を選択するのにCSSスタイルのセレクタを使用します。
+例：$("p")は全ての&lt;p&gt;要素を選択します。
+　　$("p.intro")であれば、class="intro"を持つすべての&lt;p&gt;要素を選択します。
+　　$("p#demo")は、id="demo"を持つ&lt;p&gt;要素を選択します。
+</pre>
+
+
+<h3 class="hoge">jQuery属性セレクタ</h3>
+<pre>
+jQueryは、指定の属性を持つ要素を選択するために、XPathスタイルのセレクタを使用します。
+例：$("[href]")は、href属性を持つ全ての要素を選択します。
+　　$("[href='#']")は、href value="#"を持つ全ての要素を選択します。
+　　$("[href!='#']")は、href 属性が"#"と等しくない全ての要素を選択します。
+　　$("[href$='.jpg']")は、".jpg"で終るhref属性を持つ全ての要素を選択します。
+</pre>
+
+<h3 class="hoge">jQuery CSSセレクタ</h3>
+<pre>
+jQuery CSSセレクタは、HTML要素のCSSプロパティを変換するために使用できます。
+例：$("p.intro").css("background-color","yellow") 
+</pre>
+</section>
+</body>
+</html>

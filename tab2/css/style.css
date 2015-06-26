@@ -1,0 +1,102 @@
+/* common */
+
+body, a, p, h1, h2, h3, h4, h5, h6, ul, pre {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	line-height: 1.5em;
+	font-family:'¥á¥¤¥ê¥ª', Meiryo, Osaka, '£Í£Ó £Ð¥´¥·¥Ã¥¯', 'MS PGothic',sans-serif;
+}
+
+body{
+	width:100%;
+}
+
+h1 {
+	font-size: 22px;
+	padding: 10px 0;
+}
+
+.clearfix :after{
+	clear: both;
+	display: block;
+	visibility: hidden;
+}
+.clearfix {
+	min-height: 1px;
+}
+
+/* tab */
+
+body#tab {
+	padding: 15px;
+}
+
+#tab .cont {
+	width: 800px;
+	display: block;
+}
+
+#tab #tags {
+	text-align: center;
+	overflow: hidden;
+}
+
+#tab #tags li {
+	float: left;
+	width: 150px;
+	display: block;
+	border: solid 1px #999;
+	border-radius:3px;
+}
+
+pre {
+	background-color: #EEE;
+	width: 500px;
+	margin: 15px;
+	overflow: scroll;
+	padding: 10px;
+}
+
+/* Navigation-Y */
+
+#openNavY dt{
+	width:200px;
+	height:20px;
+	text-align:center;
+	padding:10px;
+}
+
+#openNavY dd{
+	width:200px;
+	height:auto;
+	text-align:left;
+	padding:10px;
+	margin:0;
+}
+
+/* Navigation-X */
+
+#openNavX{
+	margin:0 auto;
+	width:1000px;
+}
+
+#openNavX dt{
+	width:150px;
+	height:30px;
+	text-align:center;
+	padding:10px 0;
+}
+
+#openNavX dd{
+	width:140px;
+	height:auto;
+	text-align:left;
+	padding:10px 5px;
+	margin:0;
+}
+
+#openNavX div{
+	float:left;
+}
