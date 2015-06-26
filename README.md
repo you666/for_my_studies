@@ -1,2 +1,2 @@
-# for_my_studies
-練習用に作ったやつ
+# practice
+練習用
